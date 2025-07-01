@@ -1,0 +1,522 @@
+/* Orange Color #CAE8D6 */
+
+/*....................................................*/
+/*BASIC SETUP*/
+/*....................................................*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #900100;
+    color: #555;
+    font-family: "Lato", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.clearfix {zoom: 1}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+html{
+
+scroll-behavior: smooth;
+
+}
+
+/*....................................................*/
+/*REUSABLE COMPONENTS*/
+/*....................................................*/
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.box {
+    max-width: 50%;
+	height: 300px;
+	background-color: #f9f9f9;
+	margin-left: 25%;
+	padding: 30px;
+	vertical-align: middle;
+	border-radius: 10px;
+}
+
+.contact-box {
+    max-width: 50%;
+	height: 330px;
+	background-color: #f9f9f9;
+	margin-left: 25%;
+	padding: 30px;
+	vertical-align: middle;
+	border-radius: 10px;
+}
+
+.video-box {
+    max-width: 55%;
+	height: 330px;
+	background-color: #f9f9f9;
+	margin-left: 22%;
+	padding: 30px;
+	vertical-align: middle;
+	border-radius: 10px;
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/*-----HEADINGS-----*/
+
+h1,
+h2,
+h3{
+    font-weight: 300;
+    text-transform: uppercase;
+    }
+
+h1 {
+    font-size: 240%;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #CAE8D6;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/*-----PARAGRAPHS-----*/
+
+.long-copy {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+}
+
+/*-----ICONS-----*/
+
+ion-icon {
+    font-size: 350%;
+    display: block;
+    color: #CAE8D6;
+    margin-bottom: 10px;
+}
+
+/*-----LINKS-----*/
+
+a:link,
+a:visited {
+    color: #0000ee;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #0000ee;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+
+/*-----BUTTONS-----*/
+
+.button:link,
+.button:visited,
+input[type=submit] {
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+    }
+
+.button-full:link,
+.button-full:visited,
+input[type=submit] {
+    background-color: #900100;
+    border: 1px solid #900100;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.button-ghost:link,
+.button-ghost:visited {
+    border: 1px solid #900100;
+    color: #900100;
+}
+
+.button-full:hover,
+.button-full:active {
+    border: 1px solid #900100;
+}
+
+.button-ghost:hover,
+.button-ghost:active {
+    border: 1px solid #900100;
+    color: #fff;
+}
+
+
+.button:hover,
+.button:active,
+input[type=submit]:hover,
+input[type=submit]:active {
+    background-color: #900100;
+}
+
+/*....................................................*/
+/*HEADER*/
+/*....................................................*/
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/sash-window-company-bristol.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 80vh;
+    margin-bottom: 2%;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.hero-text-box h1 {
+    font-size: 400%;
+}
+
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.logo-black {
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin: 5px 0;
+}
+
+/*--MAIN NAV--*/
+
+.main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #f0f0f0;
+}
+
+/* Dropdown Navigation Styles */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #900100;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 999;
+}
+
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown-menu li a {
+    color: #ffffff;
+    padding: 10px 15px;
+    display: block;
+    font-size: 90%;
+    text-transform: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #cf6d17;
+    color: #fff;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* MOBILE NAVI */
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon ion-icon[name=menu-outline]  {
+    font-size: 200%;
+    color: #ffffff;
+}
+
+.mobile-nav-icon ion-icon[name=close-outline]  {
+    font-size: 200%;
+    color: #ffffff;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* STICKY NAVI */
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .main-nav { margin-top: 18px; }
+.sticky .mobile-nav-icon ion-icon[name=close-outline]  {
+    font-size: 200%;
+    color: #555;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 16px 0;
+    color: #555;
+}
+
+
+.sticky .logo { display: none; }
+.sticky .logo-black { display: block; }
+
+/*....................................................*/
+/*FOOTER*/
+/*....................................................*/
+
+footer {
+    background-color: #333;
+    padding: 40px;
+    font-size: 80%;
+    margin-top: 2%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.social-links ion-icon {
+    font-size: 160%;
+    color: #888;
+}
+
+.social-links ion-icon[name=logo-facebook],
+.social-links ion-icon[name=logo-twitter],
+.social-links ion-icon[name=logo-instagram],
+.social-links ion-icon[name=logo-linkedin] {
+    transition: color 0.2s;
+}
+
+.social-links ion-icon[name=logo-facebook]:hover {
+    color: #3b5998;
+}
+
+.social-links ion-icon[name=logo-twitter]:hover {
+    color: #55acee;
+}
+
+.social-links ion-icon[name=logo-instagram]:hover {
+    color: #e95950;
+}
+
+.social-links ion-icon[name=logo-linkedin]:hover {
+    color: #007bb5;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+footer p {
+    color: #ffffff;
+    text-align: center;
+    font-size: 100%;
+    margin-top: 10px;
+}
+
+.main-text {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.contentBox {
+    float: left;
+    width: 70%;
+    vertical-align: top;
+    background-color: #f9f9f9;
+    margin-left: 15%;
+    padding: 30px;
+    border-radius: 10px;
+}
+.contentBox h2 {
+    padding-top: 20px;
+}
+
+.bodyContainer {
+	overflow: hidden;
+    background-color: #900100;
+}
+
+.other {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+.responsive1 {
+  width: 100%;
+  max-width: 367px;
+  height: auto;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 1.5em;
+}
+
+ul,
+ol {
+    margin-left: 2em;
+    padding-left: 1em;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+/*....................................................*/
+/*--ANIMATIONS--*/
+/*....................................................*/
+
+.js--hero-text-box {
+    opacity: 0;
+    animation-duration: 1s;
+}
+
+.js--contentBox {
+ animation-duration: 0.5s;   
+}
+
+.js--other .animated{
+    animation-duration: 0.5s;
+}
